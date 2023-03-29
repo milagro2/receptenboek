@@ -19,25 +19,49 @@ h2 {
     margin-bottom: 20px;
 }
 
+
+
 header {
-    background-image: url("C:/school/projectBlok3/receptenboek/site/images/indianFood1.jpeg");
+    position: relative;
+    background-image: url("../images/indianFood1.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #F5A623;
-    color: #ffd736e6;
-    padding: 50px;
+    color: #f65b18e6;
+    padding: 6%;
     text-align: center;
-    width: 80%;
     margin: 0 5%;
-    border: 2px solid #793e10b8;
+    border-top: 0px;
+    font-size: 25px;
+    line-height: 1.5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    margin: 0 5%;
+    background-color: #eca918dc;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    font-weight: bold;
+    position: relative;
+    font-size: 17px;
 
+}
+
+header h1 {
+    text-shadow:
+        1px -1px 0 #ff0000,
+        -1px 1px 0 #ffffffcb;
+    margin-top: -20px;
 }
 
 nav ul {
     margin: 0;
     padding: 0;
+    margin-left: 25px;
 }
 
 nav li {
@@ -46,31 +70,46 @@ nav li {
 }
 
 nav a {
-    color: #f1754cce;
+    color: #fffae6d8;
     text-decoration: none;
 }
 
 nav a:hover {
-    color: #ff0000;
+    color: #ff3700;
 }
+
+.aantalrec {
+    position: absolute;
+    color: rgba(255, 19, 19, 0.853);
+    text-align: right;
+    margin-left: 36%;
+}
+
 
 main {
     max-width: 1800px;
     margin: 0 4%;
+    margin-right: 200px;
     padding: 40px;
+    /* outline: 4px solid #ff0000; */
+}
+
+.spes {
+    color: rgba(0, 0, 0, 0.548);
 }
 
 .recipe {
-    margin-bottom: 40px;
-    padding: 40px;
+    margin: 15px 10% 40px 0;
+    padding: 40px auto;
     background-color: #ee982fa0;
     box-shadow: 0 4px 4px rgba(65, 27, 6, 0.375);
     overflow: auto;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 30px;
+    line-height: 1;
     /* outline: 4px solid #ff0000; */
-}
 
+}
 
 .recipe h3 {
     margin-top: 10px;
@@ -78,16 +117,80 @@ main {
 
 .recipe p {
     margin-top: 10px;
-    font-size: 14px;
-    line-height: 1.5;
 
 }
 
+.speci {
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px 10px;
+}
+
+.recepttitel {
+    margin-top: 10px;
+    font-size: 35px;
+    margin: 20px;
+    color: rgb(130, 57, 15);
+}
+
+.recepttekst {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
 
 
-.ButterChicken {
-    width: 30%;
+.info {
+    line-height: 0.3;
+}
+
+/* fotos */
+.EtenFoto {
+    width: 15%;
     float: left;
     margin-right: 10px;
-    border-radius: 5px;
+}
+
+.receptfoto {
+    width: 35%;
+    float: left;
+    margin-right: 10px;
+    border-top-right-radius: 20px;
+}
+
+/* einde fotos */
+.btrchi {
+    background-color: #dd800f;
+    border: none;
+    color: #fff5d0d1;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 4px 2px;
+    border-radius: 10px;
+}
+
+.ingredients-button a {
+    color: white;
+    text-decoration: none;
+}
+
+.hom {
+    margin: 400px;
+}
+
+footer {
+    background-color: #F5A623;
+    color: #684010e6;
+    width: 99.8%;
+    text-align: center;
+    border: 2px solid #793e10b8;
+    border-bottom: 0px;
+    font-size: 25px;
+    line-height: 1.5;
+    padding: 2% 0;
+    /* outline: 4px solid #ff0000; */
 }
