@@ -28,7 +28,7 @@ header {
     background-size: cover;
     background-color: #F5A623;
     color: #f65b18e6;
-    padding: 6%;
+    padding: 4%;
     text-align: center;
     margin: 0 5%;
     border-top: 0px;
@@ -38,16 +38,17 @@ header {
 }
 
 .navbar {
-    display: flex;
-    flex-direction: row;
-    padding: 2%;
+    /* display: flex; */
+    /* flex-direction: row; */
+    padding: 2% 0;
     margin: 0 5%;
     background-color: #eca918dc;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     font-weight: bold;
     position: relative;
-    font-size: 17px;
+    font-size: 2vw;
+    /* outline: 4px solid #ff0000; */
 
 }
 
@@ -56,6 +57,7 @@ header h1 {
         1px -1px 0 #ff0000,
         -1px 1px 0 #ffffffcb;
     margin-top: -20px;
+    font-size: 5vw;
 }
 
 nav ul {
@@ -66,12 +68,14 @@ nav ul {
 
 nav li {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 1%;
+    /* outline: 4px solid #ff0000; */
 }
 
 nav a {
     color: #fffae6d8;
     text-decoration: none;
+    font-size: 1.3vw;
 }
 
 nav a:hover {
@@ -98,8 +102,10 @@ main {
     color: rgba(0, 0, 0, 0.548);
 }
 
+
+
 .recipe {
-    margin: 15px 10% 40px 0;
+    margin: 15px 5% 7% 0;
     padding: 40px auto;
     background-color: #ee982fa0;
     box-shadow: 0 4px 4px rgba(65, 27, 6, 0.375);
@@ -113,30 +119,29 @@ main {
 
 .recipe h3 {
     margin-top: 10px;
+    font-size: 1.5vw;
 }
 
 .recipe p {
     margin-top: 10px;
-
+    font-size: 1.1vw;
 }
 
-.speci {
-    font-size: 20px;
-    margin: 20px;
-    padding: 10px 10px;
-}
+
 
 .recepttitel {
-    margin-top: 10px;
-    font-size: 35px;
-    margin: 20px;
+    /* margin-top: 10px; */
+    font-size: 4vw;
+    margin: 20px 0 10px 10px;
     color: rgb(130, 57, 15);
+    /* outline: 4px solid #ff0000; */
 }
 
 .recepttekst {
-    font-size: 20px;
+    font-size: 2vw;
     line-height: 1.5;
     margin-bottom: 30px;
+    /* outline: 4px solid #ff0000; */
 }
 
 
@@ -144,14 +149,21 @@ main {
     line-height: 0.3;
 }
 
+.speci {
+    font-size: 1.5vw;
+    padding: 3%;
+}
+
 /* fotos */
 .EtenFoto {
+
     width: 15%;
     float: left;
-    margin-right: 10px;
+    margin-right: 2%;
 }
 
 .receptfoto {
+
     width: 35%;
     float: left;
     margin-right: 10px;
@@ -163,14 +175,15 @@ main {
     background-color: #dd800f;
     border: none;
     color: #fff5d0d1;
-    padding: 10px 32px;
+    padding: 1.3% 2%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1vw;
     cursor: pointer;
-    margin: 4px 2px;
+    margin: 3px 1px;
     border-radius: 10px;
+
 }
 
 .ingredients-button a {
@@ -189,8 +202,108 @@ footer {
     text-align: center;
     border: 2px solid #793e10b8;
     border-bottom: 0px;
-    font-size: 25px;
+    font-size: 2.5vw;
     line-height: 1.5;
     padding: 2% 0;
     /* outline: 4px solid #ff0000; */
+}
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+
+.login-btn {
+    margin-left: 20%;
+    padding-left: 200px;
+    /* outline: 4px solid #ff0000; */
+}
+
+
+.register-btn {
+    padding-left: 40px;
+    margin-right: 50%;
+    align-items: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #da773e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: -5px 10px 0 7px;
+    /* outline: 4px solid #ff0000; */
+}
+
+button:hover {
+    background-color: #dd2222d3;
+}
+
+.register {
+    margin-top: 50px;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-bottom: 15%;
+    background-color: #ee982fa0;
+    box-shadow: 0 4px 4px rgba(65, 27, 6, 0.375);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 30px;
+    /* outline: 4px solid #ff0000; */
+}
+
+.registbutton {
+    margin: 0 20%;
+    font-family: 'Trebuchet MS';
+    /* outline: 4px solid #ff0000; */
+}
+
+.regist {
+    margin: 20px 20%;
+    font-family: 'Lucida Sans';
+    /* outline: 4px solid #ff0000; */
+}
+
+.registti {
+    margin: 0 20%;
+    font-family: 'cambria';
+}
+
+.regist label {
+    padding-right: 10px;
+    /* outline: 4px solid #ff0000; */
+}
+
+.login {
+    margin-top: 50px;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-bottom: 15%;
+    background-color: #ee982fa0;
+    box-shadow: 0 4px 4px rgba(65, 27, 6, 0.375);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 30px;
+    /* outline: 4px solid #ff0000; */
+}
+
+
+.login h1 {
+    padding-top: 2%;
+    margin-left: 2%;
+}
+
+.logine {
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+
+
+.userName {
+    font-size: 1.5vw;
 }

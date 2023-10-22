@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 // Database configuratie
 $host  = "mariadb";
 $dbuser = "root";

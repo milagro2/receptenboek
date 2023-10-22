@@ -1,8 +1,8 @@
 <?php
-
+session_start();
 // Database configuratie
 $host  = "mariadb";
-$dbuser = "root";
+$dbuser = "root";   
 $dbpass = "password";
 $dbname = "receptenboek";
 
@@ -48,6 +48,7 @@ $conn = mysqli_connect($host, $dbuser, $dbpass, $dbname);
                     <?php echo $recep['Moeilijkheidsgraad']; ?></p>
                 <p><?php echo $recep['Omschrijving'] ?></p>
                 <a class="btrchi" href="recept.php?Gerechtnummer=<?php echo $recep['Gerechtnummer']; ?>">Recept</a>
+
 
 
             </div>
