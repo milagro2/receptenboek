@@ -35,7 +35,7 @@ include"connect.php";
                 <img class="EtenFoto" src="images/<?php echo $recep['Foto'] ?>"></img>
                 <h3><?php echo $recep['Titel']; ?></h3>
                 <p class="spes"><?php echo $recep['Menugang']; ?> -
-                    <?php echo $recep['Duur']; ?> -
+                    <?php echo $recep['Duur']; ?> minuten -
                     <?php echo $recep['Moeilijkheidsgraad']; ?></p>
                 <p><?php echo $recep['Omschrijving'] ?></p>
                 <a class="btrchi" href="recept.php?Gerechtnummer=<?php echo $recep['Gerechtnummer']; ?>">Recept</a>

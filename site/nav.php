@@ -3,8 +3,8 @@
         <li><a href="indiaseProjectb3.php">Home</a></li>
         <li><a href="recepten.php">Recepten</a></li>
         <li><a href="specials.php">Specials</a></li>
-        <li><a href="#">Menugang</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="addRecipe.php">Recept toevoegen</a></li>
+        <!-- <li><a href="#">Menugang</a></li> -->
 
         <li class="aantalrec">
             
@@ -16,12 +16,7 @@
 
 
         <li class="userName"><?php echo $_SESSION['Username']; ?></li>
-
-
-
-
-
-
+    
 
 
 
