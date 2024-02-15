@@ -28,7 +28,7 @@ if ($gebruiker['Password'] === $_POST['LoginPassword']) {
     $_SESSION['LoginPassword'] = $gebruiker['Password'];
 
 
-    header("Location: specials.php");
+    header("Location: recepten.php");
     exit;
 } else {
 

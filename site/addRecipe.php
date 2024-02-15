@@ -1,63 +1,55 @@
+<?php
+session_start();
+
+// Database configuration
+$host = "mariadb";
+$dbuser = "root";   
+$dbpass = "password";
+$dbname = "receptenboek";
+
+// Database connection
+$conn = mysqli_connect($host, $dbuser, $dbpass, $dbname);
+
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $titel = $_POST['titel'];
+    $aantal_ingredienten = $_POST['aantal_ingredienten'];
+    $moeilijkheidsgraad = $_POST['moeilijkheidsgraad'];
+    $duur = $_POST['duur'];
+    $menugang = $_POST['menugang'];
+    $omschrijving = $_POST['omschrijving'];
+    $foto = '';
+    $sql = "INSERT INTO recepes (Titel, `Aantal ingredienten`, Moeilijkheidsgraad, Duur, Menugang, Omschrijving, Foto) 
+            VALUES ('$titel', '$aantal_ingredienten', '$moeilijkheidsgraad', '$duur', '$menugang', '$omschrijving', '$foto')";
+
+if (mysqli_query($conn, $sql)) {
+    mysqli_close($conn);
+
+    header("Location: recepten.php");
+    exit();
+} else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
+
+}
+
+mysqli_close($conn);
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Recipe</title>
-    <link rel="stylesheet" href="css/stylingProject.css">
-    <style>
-            
-        .container {
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        
-        /* form {
-            max-width: 600px;
-            margin: 0 auto;
-        } */
-        
-        label {
-            display: block;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-        
-        input[type="text"],
-        input[type="number"],
-        textarea,
-        select {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-sizing: border-box;
-        }
-        
-       
-        
-        input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            width: 100%;
-            font-size: 16px;
-        }
-        
-        input[type="submit"]:hover {
-            background-color: red;
-        }
-    </style>
+    <link rel="stylesheet" href="css/forms.css">
+ 
     
 </head>
 <body>

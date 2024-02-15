@@ -82,12 +82,6 @@ nav a:hover {
     color: #ff3700;
 }
 
-.aantalrec {
-    position: absolute;
-    color: rgba(255, 19, 19, 0.853);
-    text-align: right;
-    margin-left: 36%;
-}
 
 
 main {
@@ -312,3 +306,13 @@ textarea {
     height: 100px;
 }
 
+input[type="submit"]:hover {
+    background-color: #008609;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1vw;
+}
