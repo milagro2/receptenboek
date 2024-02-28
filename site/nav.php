@@ -10,10 +10,10 @@
          <?php
         if (isset($_SESSION['Username'])) {
             echo '<li class="userName">' . $_SESSION['Username'] . '</li>';
-            echo '<li><a href="logout.php">Uitloggen</a></li>';
+            echo '<li><a class="logout-btn" href="logout.php">Uitloggen</a></li>';
 
         } else {
-            echo '<li>Please log in to the website</li>';
+            echo '<li> <a class="mes">Please log in to the website</a></li>';
             echo '<li><a class="login-btn" href="login.php">Login</a></li>';
             echo '<li><a class="register-btn" href="register.php">Register</a></li>';
         }

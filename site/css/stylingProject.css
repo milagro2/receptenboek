@@ -211,15 +211,29 @@ footer {
 
 
 .login-btn {
-    margin-left: 20%;
-    padding-left: 200px;
+    margin-left: 270%;
+
     /* outline: 4px solid #ff0000; */
+}
+
+.logout-btn {
+    margin-left: 500%;
+
+}
+
+.mes {
+    color: red;
+
+}
+
+.mes:hover {
+    color: red;
 }
 
 
 .register-btn {
-    padding-left: 40px;
-    margin-right: 50%;
+
+    margin-left: 200%;
     align-items: center;
 }
 
@@ -300,6 +314,7 @@ button:hover {
 .userName {
     font-size: 1.5vw;
 }
+
 
 /* blok 7 ;) */
 textarea {
